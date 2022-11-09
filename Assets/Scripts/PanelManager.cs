@@ -28,6 +28,34 @@ public class PanelManager : MonoBehaviour
             musicPanels[i].SetActive(true);
         }
     }
+
+    public void NatureNextButton()
+    {
+        if (currentPanel < naturePanels.Length - 1)
+        {
+            i++;
+            naturePanels[i].SetActive(true);
+        }
+        else if (currentPanel >= naturePanels.Length - 1)
+        {
+            i = 0;
+            naturePanels[i].SetActive(true);
+        }
+    }
+
+    public void NoiseNextButton()
+    {
+        if (currentPanel < noisePanels.Length - 1)
+        {
+            i++;
+            noisePanels[i].SetActive(true);
+        }
+        else if (currentPanel >= noisePanels.Length - 1)
+        {
+            i = 0;
+            noisePanels[i].SetActive(true);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
