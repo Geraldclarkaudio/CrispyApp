@@ -3366,7 +3366,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   visualizerColor: {r: 0, g: 0.8666667, b: 1, a: 1}
-  audioClip: {fileID: 8300000, guid: 89a9caf3387f4b341926218a4ac43b8c, type: 3}
+  audioClip: {fileID: 8300000, guid: 56d8a3ab9a2203e468f7d8a0b26a5bc7, type: 3}
   loop: 1
   updateSensitivity: 0.25
   minimunHeight: 10
@@ -5078,6 +5078,30 @@ MonoBehaviour:
       - m_Target: {fileID: 7347196199877393912}
         m_TargetAssemblyTypeName: AudioVisualizer, Assembly-CSharp
         m_MethodName: StopAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7347196199162599758}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
+        m_MethodName: NoiseBackButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

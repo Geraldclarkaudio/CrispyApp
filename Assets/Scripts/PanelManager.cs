@@ -29,6 +29,23 @@ public class PanelManager : MonoBehaviour
         }
     }
 
+    public void MusicBackButton()
+    {
+        if (currentPanel <= musicPanels.Length - 1)
+        {
+            if(currentPanel <= 0)
+            {
+                i = musicPanels.Length -1;
+                musicPanels[i].SetActive(true);
+            }
+            else
+            {
+                i--;
+                musicPanels[i].SetActive(true);
+            }          
+        }
+    }
+
     public void NatureNextButton()
     {
         if (currentPanel < naturePanels.Length - 1)
@@ -43,6 +60,23 @@ public class PanelManager : MonoBehaviour
         }
     }
 
+    public void NatureBackButton()
+    {
+        if (currentPanel <= naturePanels.Length - 1)
+        {
+            if (currentPanel <= 0)
+            {
+                i = naturePanels.Length - 1;
+                naturePanels[i].SetActive(true);
+            }
+            else
+            {
+                i--;
+                naturePanels[i].SetActive(true);
+            }
+        }
+    }
+
     public void NoiseNextButton()
     {
         if (currentPanel < noisePanels.Length - 1)
@@ -54,6 +88,23 @@ public class PanelManager : MonoBehaviour
         {
             i = 0;
             noisePanels[i].SetActive(true);
+        }
+    }
+
+    public void NoiseBackButton()
+    {
+        if (currentPanel <= noisePanels.Length - 1)
+        {
+            if (currentPanel <= 0)
+            {
+                i = noisePanels.Length - 1;
+                noisePanels[i].SetActive(true);
+            }
+            else
+            {
+                i--;
+                noisePanels[i].SetActive(true);
+            }
         }
     }
     // Update is called once per frame
